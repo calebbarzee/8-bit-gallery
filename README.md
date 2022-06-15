@@ -40,6 +40,8 @@ Trevor Lamoglia
 
 * [React](https://reactjs.org/)
 * [Firebase](https://firebase.google.com/docs/firestore)
+* [GeeksforGeeks](https://www.geeksforgeeks.org/how-to-upload-files-in-firebase-storage-using-reactjs/)
+* [Youtube - Uploading Images to Firebase Storage in ReactJS](https://www.youtube.com/watch?v=8r1Pb6Ja90o&list=LL&index=8&t=371s)
 
 # Future Work
 
