@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/8-bit-gallery/static/css/main.073c9b0a.css",
-    "main.js": "/8-bit-gallery/static/js/main.2cf3368a.js",
+    "main.css": "/8-bit-gallery/static/css/main.203e2122.css",
+    "main.js": "/8-bit-gallery/static/js/main.596cf9cf.js",
     "static/js/787.5270b8a9.chunk.js": "/8-bit-gallery/static/js/787.5270b8a9.chunk.js",
     "static/media/saturn_devouring_his_son.jpeg": "/8-bit-gallery/static/media/saturn_devouring_his_son.30be47ee24e471268a1d.jpeg",
     "index.html": "/8-bit-gallery/index.html",
-    "main.073c9b0a.css.map": "/8-bit-gallery/static/css/main.073c9b0a.css.map",
-    "main.2cf3368a.js.map": "/8-bit-gallery/static/js/main.2cf3368a.js.map",
+    "static/media/radio_button.svg": "/8-bit-gallery/static/media/radio_button.14572dabf17ec2c4312d.svg",
+    "main.203e2122.css.map": "/8-bit-gallery/static/css/main.203e2122.css.map",
+    "main.596cf9cf.js.map": "/8-bit-gallery/static/js/main.596cf9cf.js.map",
     "787.5270b8a9.chunk.js.map": "/8-bit-gallery/static/js/787.5270b8a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.2cf3368a.js"
+    "static/css/main.203e2122.css",
+    "static/js/main.596cf9cf.js"
   ]
 }
