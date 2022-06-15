@@ -4,7 +4,7 @@
 
 
 
-[Software Demo Video](http://youtube.link.goes.here) -->
+<!-- [Software Demo Video](http://youtube.link.goes.here) --> -->
 
 # Development Environment
 
@@ -27,15 +27,15 @@ React.js is an open-source JavaScript library that is used for building user int
 
 # Collaborators
 
-Justyn Mencl
-Caleb Barzee
-Christian Martinez
-Ekene Okeke
+Justyn Mencl,
+Caleb Barzee,
+Christian Martinez,
+Ekene Okeke,
 Trevor Lamoglia
 
 # Useful Websites
 
-* [React]https://reactjs.org/)
+* [React](https://reactjs.org/)
 * [Web Site Name](http://url.link.goes.here)
 
 # Future Work
