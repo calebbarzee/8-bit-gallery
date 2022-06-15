@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from '../pages/Home';
 import ImageUpload from '../pages/ImageUpload';
-import Quiz from '../pages/Quiz';
+import QuizPage from '../pages/QuizPage';
+import './Navigation.css'
 
 function Navigation() {
   return (
@@ -11,15 +12,15 @@ function Navigation() {
         <nav className="navbar">
           <ul>
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/home" className="navlink">Home</Link>
             </li>
 
             <li>
-              <Link to="/imageupload">ImageUpload</Link>
+              <Link to="/imageupload" className="navlink">ImageUpload</Link>
             </li>
 
             <li>
-              <Link to="/quiz">Quiz</Link>
+              <Link to="/quizpage" className="navlink">Quiz</Link>
             </li>
 
           </ul>
@@ -28,7 +29,7 @@ function Navigation() {
         <Switch>
           <Route path="/home">
             {/* <Items/> */}
-            <Home/>
+            <Home />
           </Route>
 
           <Route path="/imageupload">
@@ -36,9 +37,9 @@ function Navigation() {
             <ImageUpload />
           </Route>
 
-          <Route path="/quiz">
+          <Route path="/quizpage">
             {/* <Items/> */}
-            <Quiz />
+            <QuizPage />
           </Route>
 
         </Switch>

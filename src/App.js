@@ -1,14 +1,13 @@
+import React from "react";
 import Navigation from './components/Navigation';
+// import quizQuestions from './api/quizQuestions';
+// import Quiz from './components/Quiz';
+// import Result from './components/Result';
 import './App.css';
 
 function App() {
   return (
-
-    <div className="App">
-        <Navigation/>
-    </div>
-
-  );
+    <Navigation />
+  )
 }
-
-export default App;
+export default App
