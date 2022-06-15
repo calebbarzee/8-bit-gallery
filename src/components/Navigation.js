@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from '../pages/Home';
-import ImageUpload from '../pages/ImageUpload'
-import Quiz from '../pages/Quiz'
+import ImageUpload from '../pages/ImageUpload';
+import Quiz from '../pages/Quiz';
 
 function Navigation() {
   return (
@@ -24,6 +24,7 @@ function Navigation() {
 
           </ul>
         </nav>
+
         <Switch>
           <Route path="/home">
             {/* <Items/> */}
