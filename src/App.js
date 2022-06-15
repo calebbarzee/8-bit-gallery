@@ -1,11 +1,13 @@
-import art from './art/abstract_expressionism/henry_moore/recumbent_figure.jpeg';
+import Navigation from './components/Navigation';
 import './App.css';
 
 function App() {
   return (
+
     <div className="App">
-        <img src={art}/>
+        <Navigation/>
     </div>
+
   );
 }
 
