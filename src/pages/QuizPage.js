@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import './QuizPage.css';
 
 function QuizPage() {
+
+	// write script to generate json file formatted similarly to this js dict.
+	// import json and images into firebase.
+	// write quiz to use data from firebase.
+	// make sure admin uploads are storing data properly in firebase.
 	const questions = [
 		{
 			questionText: 'What is the capital of France?',
