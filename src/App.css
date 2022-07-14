@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Hamburger Nav */
+.navBar {
+  position: relative;
+  
+}
+
+.navBar button {
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menuNav {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  background: #E8DED1;
+  height: 21vh;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+  max-width: 120px;
+  z-index: 9;
+}
+
+.menuNav.showMenu {
+  width: 100%;
+}
+
+a {
+  display: block;
+  padding: 10px 1px;
+  text-decoration: none;
+  color: #000000;
+  text-transform: lowercase;
+}
+
+.menuNav li:first-child {
+  margin-top: 4rem;
+}
