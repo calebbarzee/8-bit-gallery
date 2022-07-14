@@ -1,6 +1,6 @@
 import {useState} from 'react';
-import {storage} from '../firebase/index';
-import {db} from '../firebase/index';
+import {storage} from '../firebase/firebase-config';
+import {db} from '../firebase/firebase-config';
 import "./ImageUpload.css";
 
 function Upload() {

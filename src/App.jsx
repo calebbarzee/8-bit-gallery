@@ -1,11 +1,11 @@
 import React from 'react';
-import Home from './pages/Home'
+import Navigation from './components/Navigation';
 
 import './App.css';
 
 function App() {
   return (
-    <Home />
+    <Navigation />
     
   )
 }
