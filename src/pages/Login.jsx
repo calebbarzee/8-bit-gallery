@@ -6,6 +6,7 @@ import {
   signOut,
 } from "firebase/auth";
 import { auth } from '../firebase/firebase-config';
+import './Login.css'
 
 function App() {
   const [registerEmail, setRegisterEmail] = useState("");
@@ -54,8 +55,8 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <div>
+    <div className="app">
+      <div className="authenticate">
         <h3> Register User </h3>
         <input
           placeholder="Email..."
@@ -74,7 +75,7 @@ function App() {
         <button onClick={register}> Create User</button>
       </div>
 
-      <div>
+      <div className="authenticate">
         <h3> Login </h3>
         <input
           placeholder="Email..."
