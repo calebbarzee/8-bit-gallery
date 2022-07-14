@@ -1,10 +1,10 @@
 import React from "react";
-import Hamburger from '../components/Hamburger';
+import Navigation from '../components/Navigation';
 
 function Home(){
     return (
         <div>
-            <Hamburger />
+            <Navigation />
         </div>
     );
 }

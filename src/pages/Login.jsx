@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
-import { auth } from "../firebase/index";
-import "./Login.css";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+} from "firebase/auth";
+import { auth } from '../firebase/firebase-config';
 
-// Previously imported modules: 
-// createUserWithEmailAndPassword,
-// signInWithEmailAndPassword,
-// onAuthStateChanged,
-// signOut
-
-function Login() {
+function App() {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
   const [loginEmail, setLoginEmail] = useState("");
@@ -18,7 +17,7 @@ function Login() {
   
   useEffect(() =>{
 
-    auth().onAuthStateChanged(auth, (currentUser) => {
+    onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
   });
   })
@@ -26,7 +25,7 @@ function Login() {
 
   const register = async () => {
     try {
-      const user = await auth().createUserWithEmailAndPassword(
+      const user = await createUserWithEmailAndPassword(
         auth,
         registerEmail,
         registerPassword
@@ -39,7 +38,7 @@ function Login() {
 
   const login = async () => {
     try {
-      const user = await auth().signInWithEmailAndPassword(
+      const user = await signInWithEmailAndPassword(
         auth,
         loginEmail,
         loginPassword
@@ -51,7 +50,7 @@ function Login() {
   };
 
   const logout = async () => {
-    await auth().signOut(auth);
+    await signOut(auth);
   };
 
   return (
@@ -101,4 +100,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default App;

@@ -1,7 +1,8 @@
 // Import the functions you need from the SDKs you need
-import firebase from 'firebase';
-import 'firebase/auth'; 
-
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import 'firebase/compat/storage'
 
 const firebaseConfig = {
   apiKey: "AIzaSyCghu_My8yfVjmtsiXUJshVvtxzjk3zQ94",
@@ -14,14 +15,11 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 
-const db = firebase.firestore();
-const storage = firebase.storage();
-const auth = firebase.auth(app)
+const db = firebaseApp.firestore();
+const storage = firebaseApp.storage();
+const auth = firebaseApp.auth();
 export {db, storage, auth, firebase as default};
-
-
-
   
