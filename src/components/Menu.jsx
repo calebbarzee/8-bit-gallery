@@ -6,9 +6,14 @@ function Menu() {
     const [open, setOpen] = useState(false)
   
     return (
-        <div>
- 
-        </div>
+        <nav>
+            <ul class="navigation responsive">
+            <li>
+                <img class="menu_button" src="assets/hamburger_menu.png" alt="Hamburger Menu Icon">
+            </li>
+            <li></li>
+            </ul>
+        </nav>
     )
 }
 
