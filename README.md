@@ -46,9 +46,9 @@ Trevor Lamoglia
 * [GeeksforGeeks](https://www.geeksforgeeks.org/how-to-upload-files-in-firebase-storage-using-reactjs/)
 * [Youtube - Uploading Images to Firebase Storage in ReactJS](https://www.youtube.com/watch?v=8r1Pb6Ja90o&list=LL&index=8&t=371s)
 * [React-icons](https://react-icons.github.io/react-icons/icons?name=md)
+* [LogRocket](https://blog.logrocket.com/user-authentication-firebase-react-apps/)
+* [YouTube - Build a Contact form using React and Firebase](https://www.youtube.com/watch?v=RKj3OjgftXc)
 
 # Future Work
 
-* Create Quiz Selection Home Page
-* Display Sample "questions"
-* Image manipulation translate to JS
+* TBD
