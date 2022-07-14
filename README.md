@@ -1,10 +1,8 @@
 # Overview
 
-
 The program we wrote is a web app using ReactJS that creates a quiz for the user to learn about visual art. The pieces are uploaded by an admin and then are passed through a code that creates a pixelated image that vaguely resembles the original art piece. As the user makes guesses the art begins to become clearer until they guess the right answer. After they have completed the quiz they are scored and have the option to take the quiz again. 
 
 There is a home page that will have a large button that allows you to take the quiz. It will take you to the quiz and then score you. There will be a return to menu button where you can take the quiz again. Other functinality includes the admin login that allows users to upload their art and quiz questions. 
-
 
 # Development Environment
 
@@ -48,6 +46,7 @@ Trevor Lamoglia
 * [React-icons](https://react-icons.github.io/react-icons/icons?name=md)
 * [LogRocket](https://blog.logrocket.com/user-authentication-firebase-react-apps/)
 * [YouTube - Build a Contact form using React and Firebase](https://www.youtube.com/watch?v=RKj3OjgftXc)
+* [freeCodeCamp](https://www.freecodecamp.org/news/how-to-use-react-icons/)
 
 # Future Work
 
