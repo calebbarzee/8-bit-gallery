@@ -47,6 +47,8 @@ Trevor Lamoglia
 * [LogRocket](https://blog.logrocket.com/user-authentication-firebase-react-apps/)
 * [YouTube - Build a Contact form using React and Firebase](https://www.youtube.com/watch?v=RKj3OjgftXc)
 * [freeCodeCamp](https://www.freecodecamp.org/news/how-to-use-react-icons/)
+* [W3Schools - React](https://www.w3schools.com/REACT/DEFAULT.ASP)
+* [YouTube - Fireship](https://www.youtube.com/c/Fireship?app=desktop)
 
 # Future Work
 
