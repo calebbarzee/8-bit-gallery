@@ -1,5 +1,0 @@
-/*
-    The option component is rendered four times in the end webpage. This is to display the 
-    four different answers that the user can select from. Only one is correct. This data
-    could be managed by the database or perhaps a generate question function within the js files.
-*/
