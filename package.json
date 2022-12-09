@@ -1,0 +1,26 @@
+{
+  "name": "8-bit-gallery",
+  "version": "1.0.0",
+  "description": "An interactive art experience.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calebbarzee/8-bit-gallery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calebbarzee/8-bit-gallery/issues"
+  },
+  "homepage": "https://github.com/calebbarzee/8-bit-gallery#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0"
+  }
+}
