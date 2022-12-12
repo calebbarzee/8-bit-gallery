@@ -1,8 +1,3 @@
-import Home from '../views/Home.js';
-import Login from '../views/Login.js';
-import Upload from '../views/Upload.js';
-import Quiz from '../views/Quiz.js';
-
 const navigateTo = (url) => {
     history.pushState(null, null, url);
     router();
@@ -10,10 +5,10 @@ const navigateTo = (url) => {
 
 const router = async () => {
     const routes = [
-        { path: '/', view: Home },
-        { path: '/login', view: Login },
-        { path: '/upload', view: Upload },
-        { path: '/quiz', view: Quiz },
+        { path: '/', view: () => console.log('Viewing Home') },
+        { path: '/login', view: () => console.log('Viewing Login') },
+        { path: '/upload', view: () => console.log('Viewing Upload') },
+        { path: '/quiz', view: () => console.log('Viewing Quiz') },
     ];
 
     const potentialMatches = routes.map((route) => {
@@ -34,15 +29,12 @@ const router = async () => {
         };
     }
 
-    const view = new match.route.view();
-
-    document.querySelector('#app').innerHTML = await view.getHtml();
+    console.log(match.route.view());
 };
 
-// accessing the history api to use feature of back and forward arrows
-window.addEventListener('popstate', router);
-
 document.addEventListener('DOMContentLoaded', () => {
+    // accessing the history api to use feature of back and forward arrows
+    window.addEventListener('popstate', router);
     // preventing default anchor tag behavior
     // e is event, and helps refrence the event of click
     document.body.addEventListener('click', (e) => {
