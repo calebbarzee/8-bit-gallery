@@ -10,3 +10,9 @@ app.get('/*', (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000, () => console.log('Server running...'));
+
+// const deploy = require('deploy-to-github-pages');
+
+// deploy(options).catch((err) => {
+//     console.log(err);
+// });
