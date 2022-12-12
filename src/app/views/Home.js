@@ -31,7 +31,7 @@ export default class extends BaseView {
         // let response = await fetch(
         //     'https://calebbarzee.github.io/8-bit-gallery/src/app/art.json'
         // );
-        let response = await fetch('https://192.168.1.131:3000/app/art.json');
+        let response = await fetch('../art.json');
         let data = await response.json();
         art_list = data;
         // console.log(art_list);

@@ -1,3 +1,8 @@
+import Home from '../views/Home.js';
+import Login from '../views/Login.js';
+import Upload from '../views/Upload.js';
+import Quiz from '../views/Quiz.js';
+
 const navigateTo = (url) => {
     history.pushState(null, null, url);
     router();
@@ -5,10 +10,10 @@ const navigateTo = (url) => {
 
 const router = async () => {
     const routes = [
-        { path: '/', view: () => console.log('Viewing Home') },
-        { path: '/login', view: () => console.log('Viewing Login') },
-        { path: '/upload', view: () => console.log('Viewing Upload') },
-        { path: '/quiz', view: () => console.log('Viewing Quiz') },
+        { path: '/', view: Home },
+        { path: '/login', view: Login },
+        { path: '/upload', view: Upload },
+        { path: '/quiz', view: Quiz },
     ];
 
     const potentialMatches = routes.map((route) => {
@@ -17,11 +22,9 @@ const router = async () => {
             isMatch: location.pathname === route.path,
         };
     });
-
     let match = potentialMatches.find(
         (potentialMatch) => potentialMatch.isMatch
     );
-
     if (!match) {
         match = {
             route: routes[0],
@@ -29,8 +32,14 @@ const router = async () => {
         };
     }
 
+    const view = new match.route.view();
+
+    document.querySelector('#app').innerHTML = await view.getHtml();
     console.log(match.route.view());
 };
+
+// accessing the history api to use feature of back and forward arrows
+window.addEventListener('popstate', router);
 
 document.addEventListener('DOMContentLoaded', () => {
     // accessing the history api to use feature of back and forward arrows
@@ -43,6 +52,5 @@ document.addEventListener('DOMContentLoaded', () => {
             navigateTo(e.target.href);
         }
     });
-
     router();
 });
