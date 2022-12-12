@@ -3,6 +3,22 @@ import Login from '../views/Login.js';
 import Upload from '../views/Upload.js';
 import Quiz from '../views/Quiz.js';
 
+// const app = express();
+
+// if (process.env.NODE_ENV != 'production') {
+//     const webpack = require('webpack');
+//     const webpackDevMiddleware = require('webpack-dev-middleware');
+//     const config = require('./webpack.config.js');
+
+//     const compiler = webpack(config);
+
+//     app.use(
+//         webpackDevMiddleware(compiler, {
+//             publicPath: config.output.publicPath,
+//         })
+//     );
+// }
+
 const navigateTo = (url) => {
     history.pushState(null, null, url);
     router();
@@ -33,9 +49,7 @@ const router = async () => {
     }
 
     const view = new match.route.view();
-
     document.querySelector('#app').innerHTML = await view.getHtml();
-    console.log(match.route.view());
 };
 
 // accessing the history api to use feature of back and forward arrows

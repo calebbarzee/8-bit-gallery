@@ -1,60 +1,57 @@
 import BaseView from './BaseView.js';
+import { ART } from '../js/Art.js';
+import { db, storage } from '../firebase/firebase-config.js';
 
 export default class extends BaseView {
     constructor() {
         super();
         this.setTitle('Home');
-        this.art_list = this.get_art_list();
-    }
-
-    generate_art() {
-        //gets the next artwork in the list and displays it
-        this.display_art();
-    }
-
-    display_art() {
-        const art_img_spot = document.getElementById('art_img');
-        const movement_spot = document.getElementById('movement');
-        const title_spot = document.getElementById('title');
-        const artist_spot = document.getElementById('artist');
-
-        // console.log(art_list);
-        index = generate_random_index();
-        art_img_spot.src = this.art_list[index].filepath;
-        art_img_spot.alt = this.art_list[index].title;
-        movement_spot.innerHTML = this.art_list[index].movement;
-        title_spot.innerHTML = this.art_list[index].title;
-        artist_spot.innerHTML = this.art_list[index].artist;
-    }
-
-    async get_art_list() {
-        // let response = await fetch(
-        //     'https://calebbarzee.github.io/8-bit-gallery/src/app/art.json'
-        // );
-        let response = await fetch('../art.json');
-        let data = await response.json();
-        art_list = data;
-        // console.log(art_list);
-        return art_list;
-    }
-
-    generate_random_index() {
-        let random_index = Math.floor(Math.random() * (85 - 0) + 0);
-        // max = 84, min = 0
-        // console.log(random_index);
-        return random_index;
+        display_art();
     }
 
     async getHtml() {
         return `
             <div class="display_area">
             <h2 id="page_title">8-Bit Art Gallery</h1>
-            <img id="art_img" src="" alt="">
-            <h4 id="movement" class="art_movement"></h4>
-            <h4 id="title" class="art_title"></h4>
-            <h4 id="artist" class="artist_name"></h4>
-            <button class="displayNew">New Display</button>
+            <img id="art_img" src=${art_img_src}" alt="${art_img_alt}">
+            <h4 id="movement" class="art_movement">${movement}</h4>
+            <h4 id="title" class="art_title">${title}</h4>
+            <h4 id="artist" class="artist_name">${artist}</h4>
+            <button id="generateNew">Refresh</button>
             </div>
         `;
     }
+}
+const art_img_src = '';
+const art_img_alt = '';
+const movement = '';
+const title = '';
+const artist = '';
+
+async function display_art() {
+    // console.log(ART);
+    const index = generate_random_index();
+
+    const colRef = db.collection('artworks').doc('SF');
+    const doc = await cityRef.get();
+    if (!doc.exists) {
+        console.log('No such document!');
+    } else {
+        console.log('Document data:', doc.data());
+    }
+
+    console.log(this.art_img_src);
+}
+
+async function get_art_list() {
+    // let response = await fetch(
+    //     'https://calebbarzee.github.io/8-bit-gallery/src/app/art.json'
+    // );
+}
+
+function generate_random_index() {
+    const random_index = Math.floor(Math.random() * (7 - 0) + 0);
+    // max = 6, min = 0
+    console.log(random_index);
+    return random_index;
 }
